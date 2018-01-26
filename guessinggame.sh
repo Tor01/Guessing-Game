@@ -2,6 +2,9 @@ function guessingnumber {
 	echo -n "Guess number of files in working directory: "
 	read num
 	files=$(ls | wc -l)
+}
+guessingnumber
+
 	while true
 	do
 		if [[ $num -gt $files ]]
@@ -19,4 +22,4 @@ function guessingnumber {
 			break
 		fi
 	done
-}
+
